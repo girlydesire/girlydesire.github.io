@@ -15,7 +15,7 @@
   ],
   "theme_color": "#3d5a96",
   "background_color": "#3d5a96",
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/?utm_source=pwa",
   "display": "standalone",
   "orientation": "portrait"
 }
