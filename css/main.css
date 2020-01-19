@@ -1,0 +1,289 @@
+/* Modern Normalize */
+*,::after,::before{box-sizing:border-box}:root{-moz-tab-size:4;tab-size:4}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}hr{height:0}abbr[title]{text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{padding:0}progress{vertical-align:baseline}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+
+
+/* Default CSS */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Hide but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+
+/* Screen readers only */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+/* Girly Desire CSS */
+
+body {
+  background: #3d5a96;
+}
+
+footer {
+  background: url(/img/footer-shade.png) repeat-x left top;
+  box-shadow: 0 -10px 10px #bbb;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+
+.title {
+  position: relative;
+  margin: 0;
+  background: url(/img/girlydesire-logo.png) no-repeat center top;
+  box-shadow: 0 10px 10px #bbb;
+}
+
+.main {
+  background: #ced6e5;
+  padding: 20px;
+}
+
+.copyright {
+  margin: 0;
+  font: 18px/3em sans-serif;
+  color: #ced6e5;
+  text-align: center;
+}
+
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+  .social li {
+    display: block;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  .social a {
+    position: relative;
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+  }
+  .social a:hover {
+      -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+          opacity: 0.85;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=85);
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=85);
+        filter: alpha(opacity=85);
+  }
+  .social a::after {
+    content: "";
+    background: url(/img/tap-here.png);
+    opacity: 0.4;
+    top: 10px;
+    right: 7px;
+    position: absolute;
+    width: 104px;
+    height: 56px;
+    z-index: 1;   
+  }
+
+
+.social-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.live-thumbnail {
+  width: 100%;
+  margin: 15px 0;
+}
+
+
+#home {
+  display: block;
+  height: 120px;
+  width: 180px;
+  margin: 0 auto;
+  color: rgba(0,0,0,0);
+}
+
+#messenger {
+  background: #1daafc;
+  background: linear-gradient(180deg, #1daafc 0%, #1478fa 100%);
+}
+
+#facebook {
+  background: #217cef;
+}
+
+#facebook-live {
+  background: #217cef;
+}
+  #facebook-live .social-img {
+    float: none;
+  }
+  #facebook-live h2, #facebook-live p {
+    text-align: center;
+  }
+
+#instagram {
+  background: url(/img/instagram-bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+#line {
+  background: #00b900;
+}
+
+#qrcode {
+  width: 100%;
+  margin-top: 15px;
+}
+
+#back-home {
+  text-align: center;
+}
