@@ -236,11 +236,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 20px;
 }
 
-.live-thumbnail {
-  width: 100%;
-  margin: 15px 0;
-}
-
 .center {
   text-align: center;
 }
@@ -285,6 +280,11 @@ h1, h2, h3, h4, h5, h6, p {
 #qrcode {
   width: 100%;
   margin-top: 15px;
+}
+
+#live-thumbnail {
+  width: 100%;
+  margin: 15px 0;
 }
 
 #back-home {
