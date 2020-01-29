@@ -50,7 +50,8 @@ function isAndroid() {
 }
 
 function getAndroidVersion() {
-  return navigator.userAgent.match(/android ([0-9])/i)[1];
+  const ua = navigator.userAgent.match(/android ([0-9])/i);
+  if (ua && ua.length > 1) return ua[1];
 }
 
 function getDevice() {
