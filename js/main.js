@@ -42,16 +42,20 @@ fbq('track', 'PageView');
 // getDevice function
 
 function isMobile() {
-  return (typeof orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)
+  return (typeof orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
 
 function isAndroid() {
-  return /android|silk/i.test(navigator.userAgent)
+  return /android|silk/i.test(navigator.userAgent);
+}
+
+function getAndroidVersion() {
+  navigator.userAgent.match(/android ([0-9])/i)[1];
 }
 
 function getDevice() {
-  if (!isMobile()) return 'computer'
-  else if (isAndroid()) return 'android'
-  else return 'ios'
+  if (!isMobile()) return 'computer';
+  else if (isAndroid()) return 'android';
+  else return 'ios';
 }
 
