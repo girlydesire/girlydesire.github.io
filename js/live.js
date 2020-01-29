@@ -10,15 +10,8 @@ if (live_id) {
   thumb.src = 'https://api.shophil.com/facebook-video-thumb/' + live_id;
 
   if (device === 'computer') anchor.href = 'https://www.facebook.com/GirlyDesire/videos/' + live_id;
+  else if (device === 'android') anchor.href = 'fb://fullscreen_video_redirect/' + live_id;
   else if (device === 'ios') anchor.href = 'fb://fullscreen_video/' + live_id;
-  else if (device === 'android') {
-  	const version = getAndroidVersion();
-  	if (version && version >= 8) {
-  	  anchor.href = 'fb://fullscreen_video_redirect/' + live_id;
-  	} else {
-      anchor.href = 'fb://fullscreen_video/' + live_id;
-    }  	
-  }
 
 } else if (device !== 'computer') {
 
