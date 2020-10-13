@@ -1,0 +1,26 @@
+<script>
+
+const getLink = () => {
+
+  const isMobile = () => (typeof orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)
+  const isAndroid = () => /android|silk/i.test(navigator.userAgent)
+  const getDevice = () => (!isMobile()) ? 'computer' : (isAndroid()) ? 'android' : 'ios'
+
+  const device = getDevice()
+  const live_id = new URLSearchParams(location.search).get('id')
+
+  return
+    (!live_id) ? 'https://www.facebook.com/GirlyDesire/videos/' :
+    (device === 'android') ? 'fb://fullscreen_video_redirect/' + live_id :
+    (device === 'ios') ? 'fb://fullscreen_video/' + live_id :
+    'https://www.facebook.com/GirlyDesire/videos/' + live_id
+
+}
+
+const type = new URLSearchParams(location.search).get('type')
+if (type === 'replace') location.replace(getLink())
+else if (type === 'assign') location.assign(getLink())
+else if (type === 'href') location.href = getLink()
+else location = getLink()
+
+</script>
